@@ -15,4 +15,11 @@ else
  echo "Connection Successful";
 }
 
+function clean()
+{
+global $con;
+$str=htmlspecialchar($str);
+$str=stripslashes($str);
+return mysqli_real_escape_string($con, $str);
+}
 ?>
