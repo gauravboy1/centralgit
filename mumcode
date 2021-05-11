@@ -18,6 +18,7 @@ else
 function clean()
 {
 global $con;
+$str=trim($str);
 $str=htmlspecialchar($str);
 $str=stripslashes($str);
 return mysqli_real_escape_string($con, $str);
