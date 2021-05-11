@@ -1,0 +1,18 @@
+<?php 
+
+$user="root";
+$pass="pass";
+$hostname="localhost";
+$db="mail";
+$con=mysqli_connect($localhost, $root, $pass,$db);
+if(!con)
+{
+  echo "Unable to connect database; please connect system administrator";
+}
+
+else
+{
+ echo "Connection Successful";
+}
+
+?>
